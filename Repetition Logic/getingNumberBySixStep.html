@@ -1,0 +1,59 @@
+<script>
+
+
+// getting last value in ARRAY//////
+
+
+      let a=[1,2,3,6,7,5,7];
+  let arr=[]
+    
+//   step: 1 for last nuber 
+     console.log(a.pop());
+     // step: 2 for last number
+
+      console.log(a[a.length-1]);
+
+//  step : 3 for middal number   
+
+  for(let i=0; i<a.length/2; i++){
+    
+    arr.push(a[i]);
+
+ }
+ console.log(arr)
+ let b=arr.pop()
+console.log(b)
+
+//  step :4 for loop to last number 
+
+for(let i=0; i<a.length; i++){
+    if(i== a.length-1){
+        console.log(a[i]);
+    }
+}
+
+
+//  step :5 for loop to first number 
+
+for(let i=0; i<a.length; i++){
+    if(i== a.length-a.length){
+        console.log(a[i]);
+    }
+}
+
+//  step :6 for loop to seecond last
+let max=a[0];
+
+for(let i=0;i<a.length;i++){
+
+    if(a[i] > max){
+       max=a[i];
+        console.log(max);
+    arr.push(max);
+    }
+
+}
+
+
+
+</script>

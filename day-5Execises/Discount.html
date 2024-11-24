@@ -1,0 +1,29 @@
+<script>
+    function gst(price) {
+        return price + price * 0.18;
+    }
+
+    function dis(pG) {
+        let a = null;
+
+        if (pG >= 1000) {
+            a = pG - pG * 0.10;
+        } else {
+            a = pG;
+        }
+
+        return a;
+    }
+
+
+    let price = parseFloat(prompt('enter your price'));
+    let priceGst = gst(price);
+    let priceDis = dis(priceGst);
+
+
+    console.log(`your price with GST :${priceGst}`);
+    console.log(`Your final price with discuont : ${priceDis}`);
+
+
+
+</script>

@@ -1,0 +1,13 @@
+<script>
+    let name = prompt("Enter palondrom name :");
+    let arr = name.split('');
+    let str =  arr.reverse().join('');
+
+    if(name==str){
+        console.log(`this is palindrom : ${arr.join("")} `);
+        
+    }else{
+    
+        console.log(`no,this is not palindrom : ${arr.join("")} `);
+    }
+</script>

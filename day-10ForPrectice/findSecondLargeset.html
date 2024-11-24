@@ -1,0 +1,27 @@
+<script>
+    let arr=[];
+    let arrLength=parseFloat(prompt('Enter your Array Length :'));
+
+    let a=0;
+    let b=0;
+    
+
+    for(let i=0; i<arrLength; i++){
+        // let element=parseFloat(prompt('enter element of Your Array :'));
+
+        arr.push(parseFloat(prompt('enter element of Your Array :')));
+ 
+        if(arr[i] > a){
+            a=arr[i];
+        }else if(arr[i] < b){
+            b=arr[i];
+        }else{
+            console.log('dfbtbfx');
+            
+        }
+    }
+
+console.log(arr);
+console.log('Largest :'+ a);
+console.log('Smallest :'+ b);
+</script>

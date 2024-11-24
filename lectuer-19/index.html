@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>selling sell</h1>
+
+            <div class="searchbarbutton">
+                <input type="search" placeholder="search product" class="searchbard">
+                <button class="search">Search</button>
+            </div>
+
+            <ul class="manu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./account.html">Accuont</a></li>
+                <i class="fa-solid fa-bars-staggered"></i>
+            </ul>
+
+        </nav>
+    </header>
+
+
+   
+   
+
+    <!-- Slider main container -->
+    <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-slide>
+      <img src="./assets/image/slid1.jpg">
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./assets/image/slider2.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./assets/image/slider3.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+        <img src="./assets/image/s4.jpg" alt="">
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./assets/image/s5.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./assets/image/s6.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./assets/image/s7.png" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./assets/image/s8.jpg" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./assets/image/s9.jpg" />
+    </swiper-slide>
+  </swiper-container>
+
+  <!-- for card  -->
+    <div class="wapper">
+        <!-- <div class="card">
+        <div class="top-card">
+            <img src="./assets/image/leptop.png" alt="" >
+        </div>
+        <h2>MACBOOK 13PRO</h2>
+        <div class="diteile">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem laboriosam possimus. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <div class="priceAndColor">
+                <h3>$ 150000</h3>
+            <div class="colorOfproduct">
+                <button class="Gold"></button>
+                <button class="Silver"></button>
+                <button class="SpaceGray"></button>
+            </div>
+            </div>
+            <button class="adddCart">Add to Cart</button>
+        </div>
+    </div> -->
+    </div>
+
+
+    <script>
+
+
+// for multipul card //////////
+
+        let body = document.getElementById('body');
+        let wapper = document.querySelector('.wapper');
+
+        let allLeptop = [
+            {
+                image: 'assets/image/leptop.png',
+                title: 'MACBOOK 13 PRO',
+                detailes: 'Apple 2024 MacBook Air 13″ Laptop with M3 chip: 34.46 cm (13.6″) Liquid Retina Display, 8GB Unified Memory, 256GB SSD Storage, Backlit Keyboard, 1080p FaceTime HD Camera, Touch ID- Midnight.',
+                price: '₹1,08,000'
+            },
+            {
+                image: 'assets/image/asusLeptop.png',
+                title: 'Asus vivobook 14',
+                detailes: 'ASUS Vivobook 14 Thin and Light Laptop, IntelCore i3-1215U 12th Gen, 14" (35.56 cm) FHD, (8 GB RAM/512GB SSD/Win11/Office 2021/Fingerprint/42WHr /Blue/1.40 kg), X1404ZA-NK321WS',
+                price: '₹35,990'
+            },
+            {
+                image: 'assets/image/asusf15.png',
+                title: 'Asus Tuf f15',
+                detailes: 'ASUS TUF Gaming A15, Ryzen 7 7435HS, 15.6-inch (39.62 cm) FHD 144Hz, Gaming Laptop (16GB RAM/512GB SSD/NVIDIA GeForce RTX 3050/Windows 11/48WHr/Graphite Black/2.3 Kg), FA506NCR-HN054W',
+                price: ' ₹72,990'
+            },
+            {
+                image: 'assets/image/hpligthpad.png',
+                title: 'HP Pavilion',
+                detailes: 'HP Pavilion x360, 13th Gen Intel Core i7-1355U, 14-inch (35.6 cm), FHD, Touchscreen, 16GB DDR4, 512GB SSD, FPR, 5 MP Camera, Backlit KB, Audio by B&O, Pen (Win 11, MSO 2021, Gold, 1.51 kg), ek1020TU',
+                price: '₹85,990'
+            },
+            {
+                image: 'assets/image/victus.png',
+                title: 'HP Victus',
+                detailes: 'HP Smartchoice Victus Gaming Laptop, 13th Gen Intel Core i5-13420H,6GB RTX 4050 GPU,15.6-inch(39.6 cm),FHD,IPS,144 Hz,16GB DDR4,1TB SSD,Backlit KB,B&O (Win 11,MSO,Blue,2.37 kg),fa1317TX',
+                price: '₹79,990'
+            },
+            {
+                image: 'assets/image/infinixx1.png',
+                title: 'Infinix X1 pro',
+                detailes: ' Infinix INBook X1 Neo Series Celeron Quad Core N5100 - (4 GB/128 GB SSD/Windows 11 Home) XL22 Thin and Light Laptop (14 inch, Starfall Grey, 1.24 kg)',
+                price: '₹59,991'
+            },
+        ];
+
+
+        allLeptop.forEach((value) => {
+
+            let card = document.createElement('div');
+            card.className = 'card';
+            wapper.appendChild(card);
+
+            let topCard = document.createElement('div');
+            topCard.className = 'top-card';
+            card.appendChild(topCard);
+
+            let image = document.createElement('img');
+            image.className = 'img';
+            image.src = value.image;
+            topCard.appendChild(image);
+
+            let heading = document.createElement('h2');
+            heading.className = 'h2';
+            heading.textContent = value.title;
+            card.appendChild(heading);
+
+            let diteile = document.createElement('div');
+            diteile.className = 'diteile';
+            card.appendChild(diteile);
+
+            let pera = document.createElement('p');
+            pera.textContent = value.detailes;
+            diteile.appendChild(pera);
+
+            let priceAndColor = document.createElement('div');
+            priceAndColor.className = 'priceAndColor';
+            diteile.appendChild(priceAndColor);
+
+            let price = document.createElement('h3');
+            price.textContent = value.price;
+            priceAndColor.appendChild(price);
+
+            let colorOfproduct = document.createElement('div');
+            colorOfproduct.className = 'colorOfproduct';
+            priceAndColor.appendChild(colorOfproduct);
+
+            let color1 = document.createElement('button');
+            color1.className = 'Gold';
+            colorOfproduct.appendChild(color1);
+
+            let color2 = document.createElement('button');
+            color2.className = 'Silver';
+            colorOfproduct.appendChild(color2);
+
+            let color3 = document.createElement('button');
+            color3.className = 'SpaceGray'
+            colorOfproduct.appendChild(color3);
+
+            let buy = document.createElement('button');
+            buy.textContent = 'Add To Cart'
+            buy.className = 'adddCart'
+            diteile.appendChild(buy);
+
+
+            console.log(card);
+
+
+
+        });
+
+    </script>
+
+
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  
+  <footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./account.html">Account</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Selling Sell. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>selling sell</h1>
+            <ul class="manu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./account.html" id="accuont">Accuont</a></li>
+            </ul>
+            <i class="fa-solid fa-bars-staggered"></i>
+        </nav>
+    </header>
+
+    <form id="form">
+        <div class="form">
+            <div class="name">
+                <label>Name :</label><br>
+                <input type="text" id="name" placeholder="Enter your name / username " required>
+            </div>
+            <br><br>
+            <div class="gender">
+                <label>Gender :</label><br>
+                <select name="gender" id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <br><br>
+            <div class="number">
+                <label>Number :</label><br>
+                <input type="number" id="number" placeholder="Enter your Number" required>
+            </div>
+            <br><br>
+            <div class="email">
+                <label>Email :</label><br>
+                <input type="email" id="email" placeholder="Enter your Email" required>
+            </div>
+            <br><br>
+            <div class="password">
+                <label> New Password :</label><br>
+                <input type="password" id="password" placeholder="Create Your Password" required>
+            </div>
+            <br><br>
+            <div class="condition">
+                <input type="radio" name="terms" value="accept" required>
+                <p>I accept the terms and conditions. Your account is created on this website.</p>
+            </div>
+            <br>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        let form = document.getElementById('form');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            let name = document.getElementById('name').value;
+            let number = document.getElementById('number').value;
+            let gender = document.getElementById('gender').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+            if (name !== '' && number !== '' && email !== '' && password !== '' && gender !== '') {
+                console.log(`Name : ${name}`);
+                console.log(`Gender : ${gender}`);
+                console.log(`Number : ${number}`);
+                console.log(`Email : ${email}`);
+                console.log(`Password : ${password}`);
+
+                // Prepare URL parameters
+
+                const DataSandToAccountPase = new URLSearchParams({
+                    name: name,
+                    number: number,
+                    gender: gender,
+                    email: email,
+                    password: password
+                });
+
+                // Redirect to account page with parameters
+                window.location.href = `account.html?${DataSandToAccountPase.toString()}`;
+            } else {
+                alert('Please fill all fields correctly.');
+            }
+        });
+    </script>
+</body>
+
+</html> -->

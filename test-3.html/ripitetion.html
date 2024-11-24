@@ -1,0 +1,25 @@
+<script>
+
+function repet(arr){
+let res=[];
+    for(let i=0;i<arr.length;i++){
+
+        for(let j=i+1;j<arr.length;j++){
+
+            if(arr[i]==arr[j]){
+             res.push(arr[i]);
+            
+                }
+        }
+      
+    }
+
+return res;
+}
+let name='';
+
+let arr=name.split("");
+let result=repet(arr);
+console.log(result);
+
+</script>

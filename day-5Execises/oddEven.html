@@ -1,0 +1,21 @@
+<script>
+
+    function chack(a){
+        let n=a%2==0;
+        
+        if(n==true){
+            console.log('even');
+
+        }else{
+            console.log('odd');
+        }
+
+        return n;
+    }
+
+    let num = parseFloat(prompt('Enter the number which you want to chack it odd OR even :'));
+
+    let res = chack(num);
+    console.log(`${res}`);
+
+</script>

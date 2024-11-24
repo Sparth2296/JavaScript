@@ -1,0 +1,55 @@
+<script>
+
+    // if - else ///////////////////
+    var a = 20;
+    var b = 80;
+
+
+    //true
+    if (a <= b) {
+        console.log('yes');
+    } else {
+        console.log('no');
+    }
+
+    ////false
+    if (a >= b) {
+        console.log('yes');
+    } else {
+        console.log('no');
+    }
+
+
+    //   if - else - ledder////////////////////////
+
+    var cf = 100;
+    var maths = 74;
+    var entrepiniorship = 80;
+    var comunication = 88;
+    var htmlCss = 99;
+    var cLanguage = 100;
+
+    var total = cf + maths + entrepiniorship + comunication + htmlCss + cLanguage;
+    var PR = total / 6;
+
+    console.log(total);
+    console.log(PR);
+    if ((cf <= 100) && (maths <= 100) && (entrepiniorship <= 100) && (comunication <= 100) && (htmlCss <= 100) && (cLanguage <= 100)) {
+        if (PR >= 90) {
+            console.log('Graed = A');
+        } else if (PR >= 80) {
+            console.log('Graed = B');
+        } else if (PR >= 70) {
+            console.log('Graed = C');
+        } else if (PR >= 60) {
+            console.log('Graed = D');
+        } else {
+            console.log('rahenedo beta tumse na hopayega................. ');
+        }
+    } else {
+        console.log('you can not enter marcks more then 100 ... so change your marcks')
+
+    }
+
+
+</script>

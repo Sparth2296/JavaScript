@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accuont</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body id="root">
+
+
+    <header>
+        <nav>
+            <h1>selling sell</h1>
+
+            <div class="searchbarbutton">
+                <input type="search" placeholder="search product" class="searchbard">
+                <button class="search">Search</button>
+            </div>
+
+            <ul class="manu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./account.html">Accuont</a></li>
+                <i class="fa-solid fa-bars-staggered"></i>
+            </ul>
+
+        </nav>
+    </header>
+
+    <form id="form">
+        <div class="form">
+            <h1>REGISTRATION FORM</h1><br>
+            <div class="name">
+                <label>Name :</label><br>
+                <input type="text" id="name" placeholder="Enter your name / username ">
+            </div>
+            <br><br>
+            <div class="gender">
+                <label>Gender :</label><br>
+                <select name="gender" id="gender" placeholder="Gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+            </div>
+            <br><br>
+
+            <div class="number">
+                <label>Number :</label><br>
+                <input type="number" id="number" placeholder="Enter yuor Number">
+            </div>
+            <br><br>
+
+            <div class="address">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" rows="3" cols="28" required></textarea>
+            </div>
+
+
+
+            <div class="email">
+                <label>Email :</label><br>
+                <input type="email" id="email" placeholder="Enter your Email">
+            </div>
+            <br><br>
+
+            <div class="password">
+                <label> New Password :</label><br>
+                <input type="password" id="password" placeholder="Creat Your Password ">
+            </div>
+            <br><br>
+
+
+            <div class="condition">
+                <input type="radio" name="terms" value="accept" required>
+                <p>I accept the terms and conditions. Your accuont is creat in this website.</p>
+
+            </div>
+            <br>
+
+
+            <a href="./account.html"> <button type="submit">Submit</button></a>
+        </div>
+    </form>
+
+    <div class="maincard">
+        <!-- 
+           <div class="username">
+            <h4>Name : </h4><p> solnki parth</p>
+           </div>
+            <div class="usergender">
+                <h4>Gender : </h4><p> Male</p>
+            </div>
+            <div class="usernumber">
+                <h4>Number : </h4><p> 9427429266</p>
+            </div>
+            <div class="useradderss">
+                <h4>Address : </h4><p> batar vadi, carcare center in pachhal , amreli </p>
+            </div>
+            <div class="useremail">
+                <h4>Email : </h4><p> parhsolanki94274@gmail.com</p>
+            </div>
+            <div class="userpassword">
+                <h4>Password : </h4><p> 32145669877</p>
+        </div> -->
+    </div>
+    <script>
+        let body = document.getElementById('root');
+
+        let form = document.getElementById('form');
+        form.addEventListener('submit', (event) => {
+
+            event.preventDefault()
+
+            let name = document.getElementById('name').value;
+            let number = document.getElementById('number').value;
+            let gender = document.getElementById('gender').value;
+            let address = document.getElementById('address').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+            if (name !== '' && number !== '' && email !== '' && password !== '' && gender !== ' ') {
+
+                console.log(`Name : ${name}`);
+                console.log(`Gender : ${gender}`);
+                console.log(`Number : ${number}`);
+                console.log(`Address : ${address}`);
+                console.log(`Email : ${email}`);
+                console.log(`Passwprd : ${password}`);
+
+                alert('Thank You for fill the form. your Accuont is redy to wive..')
+            }
+            form.style.display = 'none';
+
+
+            let main = document.querySelector('.maincard');
+            body.appendChild(main);
+
+            let uerImg = document.createElement('div');
+            uerImg.className = 'userImg';
+            main.appendChild(uerImg);
+
+            let icon = document.createElement('i');
+            icon.className = 'fa-solid fa-user'
+            uerImg.appendChild(icon);
+
+            let userdtl = document.createElement('div');
+            userdtl.className = 'userDiteil';
+            main.appendChild(userdtl)
+            // for name
+            let nameUser = document.createElement('div');
+            nameUser.className = 'username';
+            userdtl.appendChild(nameUser);
+
+            let nameh4 = document.createElement('h4');
+            nameh4.textContent = 'Name : ';
+            nameUser.appendChild(nameh4);
+
+            let namep = document.createElement('p');
+            namep.textContent = name;
+            nameUser.appendChild(namep);
+
+            // for number
+            
+            let usernumber = document.createElement('div');
+            usernumber.className = 'usernumber';
+            userdtl.appendChild(usernumber);
+
+            let numberh4 = document.createElement('h4');
+            numberh4.textContent = 'Number : ';
+            usernumber.appendChild(numberh4);
+
+            let numberp = document.createElement('p');
+            numberp.textContent = number;
+            usernumber.appendChild(numberp);
+
+            // for gender 
+            let usergender = document.createElement('div');
+            usergender.className = 'Number : ';
+            userdtl.appendChild(usergender);
+
+            let genderh4 = document.createElement('h4');
+            genderh4.textContent = 'Gender : ';
+            usergender.appendChild(genderh4);
+
+            let genderp = document.createElement('p');
+            genderp.textContent = gender;
+            usergender.appendChild(genderp);
+
+            
+            
+            // for email 
+
+            let useremail = document.createElement('div');
+            useremail.className = 'useremail';
+            userdtl.appendChild(useremail);
+
+            let emailh4 = document.createElement('h4');
+            emailh4.textContent = 'Email : ';
+            useremail.appendChild(emailh4);
+
+            let emailp = document.createElement('p');
+            emailp.textContent = email;
+            useremail.appendChild(emailp);
+
+
+            // for password
+
+            let userpassword = document.createElement('div');
+            userpassword.className = 'Password : ';
+            userdtl.appendChild(userpassword);
+
+            let passwordh4 = document.createElement('h4');
+            passwordh4.textContent = 'password : ';
+            userpassword.appendChild(passwordh4);
+
+            let passwordp = document.createElement('p');
+            passwordp.textContent = password;
+            userpassword.appendChild(passwordp);
+
+
+
+
+
+
+
+            console.log(main);
+
+        });
+
+
+
+
+
+
+
+
+    </script>
+
+    <!-- <footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Products</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./account.html">Account</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-socials">
+            <h4>Follow Us</h4>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Selling Sell. All rights reserved.</p>
+    </div>
+</footer> -->
+</body>
+
+</html>

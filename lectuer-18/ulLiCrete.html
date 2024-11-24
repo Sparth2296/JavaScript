@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    
+
+
+    <script>
+
+        let arr = ['chapmal','ghugharo','sev','khaman','dhud','chhashSoda','daru','ganja']
+        let body = document.getElementById('body');
+
+        let ul= document.createElement('ul');
+
+        for(let i=0; i<arr.length; i++){
+            let li= document.createElement('li');
+            li.textContent = `${arr[i]}`;
+            ul.appendChild(li);
+
+        }
+
+        body.appendChild(ul);
+
+    </script>
+
+</body>
+</html>

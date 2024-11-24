@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <form id="form">
+        <div class="form">
+            <div class="name">
+                <label>Name :</label><br>
+                <input type="text" id="name">
+            </div>
+            <br><br>
+            <div class="number">
+                <label>Number :</label><br>
+                <input type="number" id="number">
+            </div>
+            <br><br>
+            <div class="email">
+                <label>Email :</label><br>
+                <input type="email" id="email" >
+            </div>
+            <br><br>
+
+            <div class="password">
+                <label>Password :</label><br>
+                <input type="password" id="password">
+            </div>
+            <br><br>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <div id="data">
+
+    </div>
+
+    <script>
+        let form = document.getElementById('form');
+        form.addEventListener('submit', (event) => {
+
+            event.preventDefault()
+
+            let name = document.getElementById('name').value;
+            let number = document.getElementById('number').value;
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let data = document.getElementById('data').value;
+            
+             if(name !== '' && number !== '' && email !== '' && password !== ''){
+
+
+                console.log(`Name : ${name}`);
+                console.log(`Number : ${number}`);
+                console.log(`Email : ${email}`);
+                console.log(`Passwprd : ${password}`);
+             }else{
+                alert(`Thank you for fill the form ......`);
+            }
+
+        })
+
+
+    </script>
+</body>
+
+
+
+</html>

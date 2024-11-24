@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form id="myform">
+        <label>Q1: What is our country name</label> <br/><br/>
+        <input type="radio" value="india" name="q1" > India <br/>
+        <input type="radio" value="china" name="q1" > China <br>
+        <input type="checkbox" value="true" name="t&c"> Term and Conditions
+
+
+        <br/><br/>
+
+        <button type="submit">Click</button>
+    </form>
+
+    <script>
+       let form = document.getElementById('myform');
+
+       form.addEventListener('submit',(event)=>{
+
+            event.preventDefault();
+
+            let option = document.querySelector('input[name="q1"]:checked').value;
+            let tc = document.querySelector('input[name="t&c"]:checked').value
+
+            console.log(option,tc)
+           
+       })
+    </script>
+    
+</body>
+</html>

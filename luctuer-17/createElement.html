@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create Element Project</title>
+
+    <style>
+        
+        #body{
+            display: flex;
+            width: 100%;
+            height: auto;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            height: auto;
+            width: 300px;
+            margin: 20px 20px;
+            border: 1px solid rgb(255, 0, 0);
+            overflow: hidden;
+            border-radius: 10px;
+            
+        }
+
+        .h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.1rem;
+            color: orangered;
+            text-align: center;
+        }
+
+        .images {
+            width: 100%; 
+
+        }
+    </style>
+
+</head>
+
+<body id="body" download>
+
+    
+
+    <script>
+
+           let body = document.getElementById('body');
+               body.style.display = 'flex';
+               alert('press spacekey....');     
+        
+         document.addEventListener('keydown',(event) => {
+            
+          if(event.key === ' '){
+
+            let a = prompt("Enter the item name");
+            let b = prompt("Enter the link of photo");
+
+            let div = document.createElement('div');
+            div.className = 'box';
+
+            let name = document.createElement('h1');
+            name.textContent = a;
+            name.className = 'h1';
+
+            let img = document.createElement('img');
+            img.src = b;
+            img.className = 'images';
+
+            body.appendChild(div)
+            div.appendChild(name);
+            div.appendChild(img);
+          }else{
+
+            alert('Do you want to exit this site to press Enter .........');
+            setTimeout(() => {
+                window.location.href='https://www.google.com/';
+            }, 1000);
+          }
+
+        })
+
+    </script>
+</body>
+
+</html>

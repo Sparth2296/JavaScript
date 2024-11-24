@@ -1,0 +1,27 @@
+<script>
+
+    let arr = [];
+
+    let arrLen = parseFloat(prompt('Enter array Length'));
+
+    for (let i = 0; i < arrLen; i++) {
+
+        let number = parseFloat(prompt('Enter the number :'));
+        arr.push(number);
+
+    }
+
+    console.log(arr);
+    let max = arr[0];
+
+    for (let i = 0; i < arrLen; i++) {
+
+        if (arr[i] > max) {
+            max = arr[i];
+        }
+    }
+    
+    console.log(max);
+
+
+</script>

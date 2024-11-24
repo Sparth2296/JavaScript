@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #root{
+            display: flex;
+            width: 150px;
+            height: 30px;
+            border: 1px solid black;
+        }
+        #number{
+            width: 50%;
+            height: 30px;
+            font-size: 2rem;
+           text-align: center;
+        }
+        button{
+            width: 25%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body id="root">
+    <button id="plus">+</button>
+    <div id="number"></div>
+    <button id="MIN">-</button>
+    <script>
+        let body = document.getElementById('root');
+        let plus = document.getElementById('plus');
+        let min = document.getElementById('MIN');
+        let number = document.getElementById('number');
+        let count = 0;       
+        plus.addEventListener('click',()=>{
+            count++;
+            number.textContent=count;
+        });
+        min.addEventListener('click',()=>{
+            count--;
+           if(count >-1){
+            number.textContent=count;
+           }else{
+            count=0;
+           }
+        })
+    </script>
+</body>
+</html>

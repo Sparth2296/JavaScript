@@ -1,0 +1,53 @@
+<script>
+    let n=parseFloat(prompt('which type of calculetion do you want ? 1.sum / 2.suptriction / 3.multiplication / 4.divition / 5.modulo'))
+   
+   
+    
+    function sum(num1,num2){
+        return num1+num2;
+    }
+
+    function sub(num1,num2){
+        return num1-num2;
+    }
+
+    function multi(num1,num2){
+        return num1*num2;
+    }
+
+    function div(num1,num2){
+        return num1/num2;
+    }
+
+    function mod(num1,num2){
+        return num1%num2;
+    }
+
+   if(n<=5){
+    let num1 = parseFloat(prompt('number 1'));
+    let num2 = parseFloat(prompt('number 2'));
+    if(n==1){
+        
+        console.log(`Addition :${sum(num1,num2)}`);
+
+    }else if(n==2){
+        console.log(`Subtraction :${sub(num1,num2)}`);
+       
+
+    }else if(n==3){
+        console.log(`Multiplication:${multi(num1,num2)}`);
+       
+    }else if(n==4){
+        console.log(`Division :${div(num1,num2)}`);
+       
+    }else if(n==5){
+        console.log(`Modulo :${mod(num1,num2)}`);
+        
+    }
+
+   }else{
+    
+        console.log('your number is not valid')
+   }
+
+</script>
