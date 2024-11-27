@@ -1,0 +1,28 @@
+<script>
+    
+    class Mobile{
+        constructor(commpany,model,color,price,ram,storage){
+            this.commpany = commpany
+            this.model = model
+            this.color = color
+            this.price = price
+            this.ram = ram
+            this.storage = storage
+
+
+        }
+        mobileinfo(){
+            console.log(
+                `Commpany Name : ${this.commpany},
+                Model Name : ${this.model},
+                Color : ${this.color},
+                Price : ${this.price},
+                Ram : ${this.ram}
+                Storage : ${this.storage}`); 
+        }
+    }
+    let vivo = new Mobile('vivo','y51a','blue','18,999','8 Gb','128 GB');
+
+    vivo.mobileinfo()
+
+</script>

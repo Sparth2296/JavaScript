@@ -1,0 +1,61 @@
+
+<script>
+    class Mobile{
+        constructor(model,color,price,ram,storage){
+            this.model = model
+            this.color = color
+            this.price = price
+            this.ram = ram
+            this.storage = storage
+        }
+        mobileinfo(){
+            throw new Error(`This method is not found1..`)
+        }
+    }
+    class vivo extends Mobile {
+        constructor(commapany,model,color,price,ram,storage){
+            super(model,color,price,ram,storage);
+            this.commapany = commapany
+        }
+        mobileinfo(){
+            console.log(
+                `Commapny Name : ${this.commapany}
+                Model Name : ${this.model},
+                Color : ${this.color},
+                Price : ${this.price},
+                Ram : ${this.ram}
+                Storage : ${this.storage}`); 
+        }
+    }
+    class apple extends Mobile {
+        constructor(commapany,model,color,price,ram,storage){
+            super(model,color,price,ram,storage);
+            this.commapany = commapany
+        }
+        mobileinfo(){
+            console.log(
+                `Commapny Name : ${this.commapany}
+                Model Name : ${this.model},
+                Color : ${this.color},
+                Price : ${this.price},
+                Ram : ${this.ram}
+                Storage : ${this.storage}`); 
+        }
+    }
+    class oppo extends Mobile {
+        constructor(commapany,model,color,price,ram,storage){
+            super(model,color,price,ram,storage);
+            this.commapany = commapany
+        }
+    }
+    let mobile1 = new vivo('vivo','X200 pro','Black','143,899','32 Gb','1 TB');
+    let mobile2 = new apple('Apple','16 pro max','White','155,999','32 GB','1 TB');
+    let mobile3 = new oppo('opoo','Find 8 pro','blue','103,999','16 Gb','512 GB');
+   try{
+    mobile1.mobileinfo()
+    mobile2.mobileinfo()
+    mobile3.mobileinfo()
+   }catch(e){
+    console.log(e);
+   }
+</script>

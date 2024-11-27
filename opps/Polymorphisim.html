@@ -1,0 +1,92 @@
+
+<script>
+    class Mobile{
+        constructor(model,color,price,ram,storage){
+            this.model = model
+            this.color = color
+            this.price = price
+            this.ram = ram
+            this.storage = storage
+        }
+
+       ringtone(){
+        console.log(`some one type of rington..`);
+       }
+
+    }
+
+    class vivo extends Mobile {
+        constructor(commapany,model,color,price,ram,storage){
+            super(model,color,price,ram,storage);
+
+            this.commapany = commapany
+
+        }
+
+        mobileinfo(){
+            console.log(
+                `Commapny Name : ${this.commapany}
+                Model Name : ${this.model},
+                Color : ${this.color},
+                Price : ${this.price},
+                Ram : ${this.ram}
+                Storage : ${this.storage}`); 
+        } 
+        ringtone(){
+            return"jovi lifestyle";
+        }
+       
+    }
+
+    class apple extends Mobile {
+        constructor(commapany,model,color,price,ram,storage){
+            super(model,color,price,ram,storage);
+
+            this.commapany = commapany
+
+        }
+        mobileinfo(){
+            console.log(
+                `Commapny Name : ${this.commapany}
+                Model Name : ${this.model},
+                Color : ${this.color},
+                Price : ${this.price},
+                Ram : ${this.ram}
+                Storage : ${this.storage}`); 
+        }
+        ringtone(){
+            return "iTone new version"
+        }
+    }
+
+    class oppo extends Mobile {
+        constructor(commapany,model,color,price,ram,storage){
+            super(model,color,price,ram,storage);
+
+            this.commapany = commapany
+
+        }
+        mobileinfo(){
+            console.log(
+                `Commapny Name : ${this.commapany}
+                Model Name : ${this.model},
+                Color : ${this.color},
+                Price : ${this.price},
+                Ram : ${this.ram}
+                Storage : ${this.storage}`); 
+        }
+
+    }
+
+    let mobile1 = new vivo('vivo','X200 pro','Black','143,899','32 Gb','1 TB');
+    let mobile2 = new apple('Apple','16 pro max','White','155,999','32 GB','1 TB');
+    let mobile3 = new oppo('opoo','Find 8 pro','blue','103,999','16 Gb','512 GB');
+
+    mobile1.mobileinfo()
+    console.log(mobile1.ringtone());
+    
+    mobile2.mobileinfo()
+    console.log(mobile2.ringtone());
+    mobile3.mobileinfo()
+    console.log(mobile3.ringtone());
+</script>
