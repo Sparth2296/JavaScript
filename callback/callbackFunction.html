@@ -1,0 +1,27 @@
+<script>
+    function calcluletion(a,b,callback) {
+        console.log(callback(a,b));
+    }
+
+    function add(a,b){
+        return a+b;
+    }
+
+    function sup(a,b){
+        return a-b;
+    }
+
+    function mul(a,b) {
+        return a*b
+    }
+
+    function div(a,b) {
+        return a/b
+    }
+
+    let addistion = calcluletion(10,20,add);
+    let subtriction = calcluletion(10,20,sup);
+    let multiplication = calcluletion(10,20,mul);
+    let divition = calcluletion(10,20,div);
+
+</script>

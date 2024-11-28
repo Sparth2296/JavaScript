@@ -1,0 +1,31 @@
+<script>
+  let mypromises = new Promise((Resolve, Reject) => {
+    let sec = false;
+    if (sec) {
+      Resolve("this is complited");
+    } else {
+      Reject("THis is Incomplited");
+    }
+  });
+  // promises heanling
+  mypromises
+    .then((r) => {
+      console.log(r);
+    })
+    .catch((e) => {
+      console.log(e);
+    })
+    .finally("O===||:::::::::::::::>");
+
+  async function functionHeandle() {
+    try {
+      const res = await mypromises;
+
+      console.log(res);
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+  functionHeandle();
+</script>
