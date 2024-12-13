@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: rgb(113, 113, 113);
+    flex-direction: column;
+    
+}
+#form{
+    width: 85%;
+    height: 95vh;
+    border-radius: 15px;
+    background-color:rgba(255, 255, 255, 0.298);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(3px);
+    padding: 15px 0px;
+    box-shadow: 0px 0px 20px 2px gray;
+    margin: 50px  0px;
+}
+.input-1{
+    width: 80%;
+    height: 20%;
+}
+input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0);
+    margin-top: 10px;
+}
+label{
+    font-size: 1.5rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    margin-left: 20px;
+}
+.submit{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+.submit:hover{
+    box-shadow: 0px 0px 10px 0px black;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+#main-container{
+    width: 90vw;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card{
+    width: 280px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px gray;
+    margin-bottom: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(3px);
+}
+.images-of-card{
+    width: 100%;
+    height: 60%;
+}
+.images-of-card img {
+    height: 100%;
+}
+.dtl-of-card{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 8px;
+}
+.dtl-of-card h1{
+    font-size: 1.5rem;
+}
+.dtl-of-card p{
+    font-size: 0.8rem;
+}
+.add{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+}
+.add:hover{
+    box-shadow: 0px 0px 10px 0px black;
+    transition: all 0.3s ease;
+    background-color: white;
+}

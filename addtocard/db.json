@@ -1,0 +1,50 @@
+{
+    "product": [
+        {
+            "id": "1",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDT-GfJeqqxbNtf5HC8e045kERT69Goax4w&s",
+            "title": "Harvest Vase 1",
+            "subtitle": "by studio and friends",
+            "dtls": "Harvest Vases are a reinterpretationof peeled fruits and vegetables asfunctional objects. The surfacesappear to be sliced and pulled aside,allowing room for growth.",
+            "price" : "8705623"
+
+        },
+
+        {
+            "id": "2",
+            "img": "https://in-exstatic-vivofs.vivo.com/gdHFRinHEMrj3yPG/product/1698909173129/zip/img/vivo-v29-screen-feature-pc2.png",
+            "title": "Harvest Vase 2",
+            "subtitle": "by studio and friends",
+            "dtls": "Harvest Vases are a reinterpretationof peeled fruits and vegetables asfunctional objects. The surfacesappear to be sliced and pulled aside,allowing room for growth.",
+            "price" : "87000"
+
+        },
+        {
+            "id": "3",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeC4Iwt58MwKcvypiWlt5xIJw53rWOox_FEA&s",
+            "title": "Harvest Vase",
+            "subtitle": "by studio and friends",
+            "dtls": "Harvest Vases are a reinterpretationof peeled fruits and vegetables asfunctional objects. The surfacesappear to be sliced and pulled aside,allowing room for growth.",
+            "price" : "870023"
+
+        },
+        {
+            "id": "4",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeC4Iwt58MwKcvypiWlt5xIJw53rWOox_FEA&s",
+            "title": "Harvest Vase",
+            "subtitle": "by studio and friends",
+            "dtls": "Harvest Vases are a reinterpretationof peeled fruits and vegetables asfunctional objects. The surfacesappear to be sliced and pulled aside,allowing room for growth.",
+            "price" : "870023"
+
+        },
+        {
+            "id": "1",
+            "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBDT-GfJeqqxbNtf5HC8e045kERT69Goax4w&s",
+            "title": "Harvest Vase 1",
+            "subtitle": "by studio and friends",
+            "dtls": "Harvest Vases are a reinterpretationof peeled fruits and vegetables asfunctional objects. The surfacesappear to be sliced and pulled aside,allowing room for growth.",
+            "price" : "8705623"
+
+        }
+    ]
+}
